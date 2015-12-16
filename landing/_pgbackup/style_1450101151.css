@@ -1,0 +1,55 @@
+
+
+.navbar-default
+{
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-brand {
+    height: 100px;
+}
+.navbar-brand img
+{
+    height: inherit;
+}
+
+.navbar
+{
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: rgba(255, 255, 255, .7);
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero-bg
+{
+    background-image: url(image/win-hero-blure.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 690px;
+    padding-top: 160px;
+}
+
+.hero-text-white {
+    color: white;
+    text-align: right;
+}
+
+.vcenter {
+    transform: translateY(50%);
+}
