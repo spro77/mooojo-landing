@@ -110,23 +110,25 @@
 
 .cta-btn
 {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     width: 94px;
     height: 94px;
     background: #FF3626;
+    background-image:   url(image/ico_gowin.svg),
+                        linear-gradient(-180deg, #FE2400 0%, #C20E00 100%);
+    background-repeat: no-repeat;
+    background-position: 70% 60%;
     border-radius: 100px;
-    background-image: linear-gradient(-180deg, #FE2400 0%, #C20E00 100%);
     box-shadow: 17px 0px 14px 0px rgba(0,0,0,0.36);
 }
+
 
 .btn-send {
     z-index: 2;
     position: relative;
     width: 94px;
     height: 94px;
-    background-position: 45%;
-    background-repeat: no-repeat;
     background-size: 50%;
     background: #FF3626;
     background-image:   url(image/ico_send.svg),
@@ -380,5 +382,10 @@
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
+}
+
+.zmax
+{
+    z-index: 2;
 }
 
