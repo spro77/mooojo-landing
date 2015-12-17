@@ -329,7 +329,7 @@
                             </ul>                             
                         </nav>
                     </div>
-                    <div class="col-md-3 text-center hero-text-white visible-xs visible-sm visible-md visible-lg pull-down col-sm-4">
+                    <div class="col-md-3 text-center hero-text-white visible-xs visible-sm visible-md visible-lg col-sm-4">
                         <h4 class="">Tell your friend</h4>
                         <div class="social">
                             <ul>
@@ -355,21 +355,20 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script type="text/javascript">
-                $(window).onload = function() {
+                $(window).load = function() {
+        // fotter navbar horizontal position calculation
                     var width = $('.justified').width();
                     $('.justified').css('margin-left', '-' + (width / 1.5)+'px');
         // push element to parent's bottom
-                    $(document).ready(function(){
-                        $('.pull-down').each(function() {
-                            $(this).css('margin-top', $(this).parent().height()-$(this).height()-90)
-                        });
+                    $('.pull-down').each(function() {
+                        $(this).css('margin-top', $(this).parent().height()-$(this).height()-90)
+                    });
         // fit image to div proportinally
-                        $('.content-image').each(function() {
-                            if(this.height > this.width) {
-                                $(this).css('height', '100%')
-                                $(this).css('width', 'auto')
-                            };
-                        });
+                    $('.content-image').each(function() {
+                        if(this.height > this.width) {
+                            $(this).css('height', '100%')
+                            $(this).css('width', 'auto')
+                        };
                     });
                 }();
         </script>
