@@ -46,6 +46,15 @@
     -webkit-box-shadow: none;
 }
 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+{
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
 .navbar-brand
 {
     height: 100px;
@@ -53,7 +62,7 @@
 
 .navbar-brand img
 {
-    height: inherit;
+    height: 100%;
 }
 
 .navbar
@@ -115,7 +124,7 @@
     width: 94px;
     height: 94px;
     background: #FF3626;
-    background-image:   url(image/ico_gowin.svg),
+    background-image: url(image/ico_gowin.svg),
                         linear-gradient(-180deg, #FE2400 0%, #C20E00 100%);
     background-repeat: no-repeat;
     background-position: 70% 60%;
@@ -123,15 +132,15 @@
     box-shadow: 17px 0px 14px 0px rgba(0,0,0,0.36);
 }
 
-
-.btn-send {
+.btn-send
+{
     z-index: 2;
     position: relative;
     width: 94px;
     height: 94px;
     background-size: 50%;
     background: #FF3626;
-    background-image:   url(image/ico_send.svg),
+    background-image: url(image/ico_send.svg),
                         linear-gradient(-180deg, #FE2400 0%, #C20E00 100%);
     background-repeat: no-repeat;
     background-position: 45%;
@@ -387,5 +396,49 @@
 .zmax
 {
     z-index: 2;
+}
+
+navbar-inner-about
+{
+}
+
+.navbar-inner-about
+{
+    position: relative;
+    background-color: dodgerblue;
+}
+
+.hero-logo-img
+{
+}
+
+.hero-logo-img
+{
+    height: inherrit;
+}
+
+.hero-logo-img
+{
+}
+
+.footer-wrap-2
+{
+    padding: 20px;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+@media (min-width:768px)
+{
+@media (min-width:768px)
+{
+    .content
+    {
+        height: 300px;
+        background-image: url("../images/camera-girl.jpg");
+    	background-size: cover !important;
+    }
+}
+
 }
 
