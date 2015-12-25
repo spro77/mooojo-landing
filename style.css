@@ -1,3 +1,5 @@
+
+
 /*
 @media (max-width:479px)
 {
@@ -18,18 +20,19 @@
 @media (min-width:480px) and (max-width:1199px)
 {
 */
-    .hero-bg
-    {
-        background-image: url('image/bg.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 650px;
-        padding-top: 20px;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-/*}*/
 
+.hero-bg
+{
+    background-image: url('image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*}*/
 
 /*
 @media (min-width:1200px)
@@ -99,20 +102,50 @@
 
 .block-text
 {
+    height: 84px;
     background-color: white;
     color: #626262;
     font-size: 14px;
     margin-top: 10px;
-    padding: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 8px 8px 0px 0px;
 }
 
 .block-text p
 {
+    text-align: center;
     color: #585858;
     font-family: Georgia;
     font-style: italic;
-    line-height: 20px;
+    font-size: 1.1em;
+}
+
+.block-text p:before
+{
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.block-text p:after
+{
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-left: 0.25em;
+    vertical-align: -0.6em;
+}
+
+.content-image
+{
+    width: auto;
+    height: 100%;
 }
 
 .sprite
@@ -171,7 +204,7 @@
 .counter
 {
     position: relative;
-    text-align:center;
+    text-align: center;
     margin-top: -50px;
     max-width: 252px;
     width: 80%;
@@ -184,7 +217,7 @@
 
 .counter-span
 {
-    position:absolute;
+    position: absolute;
     top: 41px;
     left: 27px;
     font-family: 'Open Sans';
@@ -212,12 +245,6 @@
     align-content: center;
 }
 
-.content-image
-{
-    width: 100%;
-    height: auto;
-}
-
 .content-block-nopad
 {
     margin-top: 30px;
@@ -234,20 +261,33 @@
     padding: 50px 0px;
     background-image: url(image/winners.svg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center top;
+    background-size: 100%;
+    background-color: RGB(245, 245, 245);
+}
+
+.content-4
+{
+    padding: 20px 0px;
+    height: 270px;
+    background-image: url(image/winners.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: 100%;
     background-color: RGB(245, 245, 245);
 }
 
 .ico-store
 {
-/*    display: block;*/
+    display: inline-block;
+    max-width: 180px;
+    width: 33%;
     margin-bottom: 5px;
 }
 
 .ico-store img
 {
-    width: 100px;
+    width: 100%;
 }
 
 .footer-wrap-1
@@ -327,7 +367,6 @@
     background-color: dodgerblue;
 }
 
-
 .footer-wrap-2
 {
     padding: 20px;
@@ -357,15 +396,6 @@
     -o-filter: drop-shadow(0px 19px 10px RGBA(49, 0, 0, .5));
     -ms-filter: drop-shadow(0px 19px 10px RGBA(49, 0, 0, .5));
     filter: drop-shadow(0px 19px 10px RGBA(49, 0, 0, .5));
-/*
-    animation-name: pulse;
-    animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); 
-    animation-delay: 4s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-*/
 }
 
 .magician
@@ -396,14 +426,28 @@
     margin-top: 20px;
 }
 
-
-.store {
+.store
+{
     display: inline-block;
-    width: 200px;
+    max-width: 200px;
+    width: 30%;
     height: auto;
-    margin: 10px;
+    margin: 4px;
 }
 
-.store img {
+.store img
+{
     width: 100%;
 }
+
+.btn-submit
+{
+    margin-top: 20px;
+    background-image: url('image/roulette-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 234px;
+    height: 234px;
+}
+
