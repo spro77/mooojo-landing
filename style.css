@@ -281,7 +281,7 @@
 {
     display: inline-block;
     max-width: 180px;
-    width: 33%;
+    width: 32%;
     margin-bottom: 5px;
 }
 
@@ -292,10 +292,13 @@
 
 .footer-wrap-1
 {
-    padding: 80px 0px;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 5px;
     width: 100%;
     background-color: dodgerblue;
 }
+
 
 .justified
 {
@@ -449,5 +452,58 @@
     background-size: 100%;
     width: 234px;
     height: 234px;
+}
+
+.navbar
+{
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggle
+{
+    float: none;
+    margin-left: -7px;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: white;
+}
+
+.navbar-header
+{
+    padding-left: 50%;
+}
+
+.navbar-collapse
+{
+    padding-left: 50%;
+}
+
+.nav
+{
+    margin-left: -210px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: rgba(255, 255, 255, .6);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus
+{
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+{
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid white;
 }
 
